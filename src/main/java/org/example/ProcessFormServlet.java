@@ -5,9 +5,9 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 
 @WebServlet("/processForm")
 public class ProcessFormServlet extends HttpServlet {
@@ -15,11 +15,14 @@ public class ProcessFormServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String name = request.getParameter("name");
-        response.setContentType("text/html");
+        HttpSession session = request.getSession();
+        User user = (User) session.getAttribute("user");
+        if (user == null) {
+            user = new User();
+            session.setAttribute("user", user);
+        }
+        user.setName(name);
 
-        PrintWriter out = response.getWriter();
-        out.println("<html><body>");
-        out.println("<h1> Hello " + name + "</h1>");
-        out.println("</body></html>");
+        response.sendRedirect("form.jsp");
     }
 }

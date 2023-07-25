@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40315e32-f64e-4995-8125-0e71b2589291" name="变更" comment="JSPAnHour">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="40315e32-f64e-4995-8125-0e71b2589291" name="变更" comment="maven-wrapper" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,13 +85,32 @@
       <option name="project" value="LOCAL" />
       <updated>1690263818793</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="maven-wrapper">
+      <created>1690264716734</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1690264716734</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="初次提交" />
     <MESSAGE value="增加一部分 jsp 基本语法" />
     <MESSAGE value="JSPAnHour" />
-    <option name="LAST_COMMIT_MESSAGE" value="JSPAnHour" />
+    <MESSAGE value="maven-wrapper" />
+    <option name="LAST_COMMIT_MESSAGE" value="maven-wrapper" />
   </component>
 </project>
